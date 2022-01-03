@@ -4,51 +4,51 @@
 }
 
 header {
-  height: 50px;
   width: 100%;
   position: fixed;
-  z-index: 3;
+  z-index: 100;
 }
 
 .topbar {
-  height: 50px;
   background-color: rgb(0, 89, 255);
+  display: flex;
+  justify-content: center;
+  height: 35px;
 }
 
-.topbar .topbar_left {
-  box-sizing: border-box;
-  margin: 0 100px;
+.topbar .left {
+  margin: 0 100px 0 100px;
   padding: 5px;
+  float: left;
   background-color: orange;
   border-radius: 0 0 5px 5px;
-  float: left;
   box-shadow: 5px 5px 0px 0px blue;
 }
 
-.topbar .topbar_left i {
+.topbar .left i {
   color: white;
 }
 
-.topbar .topbar_left span {
+.topbar .left span {
   color: white;
   float: right;
   padding: 0 10px;
   font-weight: 200;
 }
 
-.topbar .topbar_right {
-  display: block;
-  float: right;
-  margin-right: 250px;
+.topbar .right {
+  display: flex;
+  justify-items: center;
+  margin: 0 100px 0 100px;
 }
 
-.topbar .topbar_right i {
+.topbar .right i {
   position: absolute;
   padding: 7px;
   justify-items: center;
 }
 
-.topbar .topbar_right input {
+.topbar .right input {
   font-style: italic;
   height: 40px;
   font-size: 14px;
@@ -57,12 +57,12 @@ header {
   box-shadow: 5px 5px 0px 0px blue;
 }
 
-.topbar .topbar_right .logo {
+.topbar .right .logo {
   float: right;
   margin-left: 5px;
 }
 
-.topbar .topbar_right .logo i {
+.topbar .right .logo i {
   position: static;
   background-color: rgb(0, 153, 255);
   color: white;
@@ -74,37 +74,32 @@ header {
 .menu {
   max-width: 100%;
   font-size: 25px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   padding: 20px;
   background-color: rgb(0, 89, 255);
 }
 
 .menu img {
   height: 50px;
-  padding-left: 50px;
-}
-
-.menu .menu_right {
-  font-family: "arial";
-  float: right;
-  font-size: 15px;
-  list-style: none;
-  padding-right: 100px;
+  margin: 0 50px 0 50px;
 }
 
 .menu .menu_right ul {
-  margin-top: -35px;
+  font-family: "arial";
+  display: flex;
+  font-size: 15px;
+  list-style: none;
+  padding: 0 50px 0 50px;
+  justify-content: center;
 }
 
 .menu .menu_right ul li {
-  display: inline-block;
-  list-style: none;
-  margin: 0;
-  padding: 0;
-  position: relative;
-  margin: 0 7px;
-  box-sizing: border-box;
   color: white;
-  text-align: center;
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
   justify-content: center;
 }
 
@@ -144,7 +139,7 @@ header {
 }
 
 .slide1 .carousel-inner .carousel-item img {
-  object-fit: fill;
+  object-fit: cover;
   width: 100%;
   height: 100%;
 }
@@ -251,6 +246,7 @@ header {
   flex-wrap: wrap;
   display: flex;
   margin: 20px 50px 50px 100px;
+  text-align: center;
 }
 
 .main .product .popularproduct .popularproduct_items {
@@ -276,70 +272,45 @@ header {
 
 .main .product .popularproduct .popularproduct_items p {
   display: block;
-  font-weight: 500;
+  font-weight: 600;
   padding: 10px;
-}
-
-@media (max-width: 767px) {
-  .carousel-inner .carousel-item > div {
-    display: none;
-  }
-  .carousel-inner .carousel-item > div:first-child {
-    display: block;
-  }
-}
-
-.carousel-inner .carousel-item.active,
-.carousel-inner .carousel-item-next,
-.carousel-inner .carousel-item-prev {
-  display: flex;
-}
-
-@media (min-width: 768px) {
-  .carousel-inner .carousel-item-end.active,
-  .carousel-inner .carousel-item-next {
-    transform: translateX(25%);
-  }
-
-  .carousel-inner .carousel-item-start.active,
-  .carousel-inner .carousel-item-prev {
-    transform: translateX(-25%);
-    color: #354052;
-  }
-}
-
-.carousel-inner .carousel-item-end,
-.carousel-inner .carousel-item-start {
-  transform: translateX(0);
+  font-size: 15px;
 }
 
 .main .container {
   width: 100%;
+  height: auto;
 }
 
-.main .container .card {
+.main .container .row {
   width: 100%;
 }
 
-.main .container .card-img {
-  height: 300px;
-  width: 300px;
-  border-radius: 10px;
-  justify-content: center;
-  align-items: center;
+.main .container .row .carousel-inner {
+  width: 100%;
 }
 
-.main .container .card-img img {
+.main .container .row .carousel-inner .carousel-item .card {
   width: 100%;
-  height: 100%;
-  padding: 10px;
+  height: 400px;
+ display: flex;
+ justify-content: center;
+}
+
+.main .container .row .carousel-inner .carousel-item .card img {
   object-fit: cover;
+  width: 100%;
+  height: 70%;
 }
-.main .container .card span {
-  font-weight: 500;
+
+.main .container .row .carousel-inner .carousel-item .card span{
+  display: block;
+  margin: 10px;
+  font-weight: 600;
 }
-.main .container .card p {
-  font-weight: 500;
+
+.main .container .row .carousel-inner .carousel-item .card p {
+  font-weight: 600;
 }
 
 .main .product button {
@@ -358,24 +329,29 @@ header {
 
 .main .about {
   margin: 50px;
-  width: 90%;
+  width: 100%;
   height: 500px;
   display: flex;
-  position: relative;
+  justify-content: center;
 }
 
 .main .about .about_left {
-  padding: 10px;
+  width: 50%;
   font-size: 18px;
   text-align: left;
   line-height: 25px;
-  margin: 10px 50px;
+} 
+.main .about .about_right {
+  width: 50%;
+}
+
+.main .about .about_right img {
+  object-fit: cover;
 }
 
 .main .staff {
   background-color: whitesmoke;
   height: 400px;
-
 }
 
 .main .staff .image {
@@ -413,14 +389,12 @@ header {
   background: none;
   box-shadow: none;
   text-shadow: none;
-  margin-left: 130px;
 }
 
 .main .staff .slide3 .carousel-control.right {
   background: none;
   box-shadow: none;
   text-shadow: none;
-  margin-right: 130px;
 }
 
 .main .staff .slide3 .carousel-control {
@@ -447,24 +421,34 @@ header {
 
 .main .support {
   width: 100%;
-  height: 400px;
+  height: auto;
   display: flex;
-  margin: 50px 50px;
-  padding-left: 50px;
+  justify-content: center;
 }
 
-.main .support .ul li {
-  width: 30%;
+.main .support .ul li{
+  width: 25%;
   padding: 10px;
   font-size: 15%;
   text-align: left;
   line-height: 20px;
 }
 
-.main .support iframe {
-  max-width: 300px;
-  max-height: 250px;
-  margin: 0 10px 0 10px;
+.main .support .map {
+  width: 25%;
+}
+
+.main .support .map iframe{
+  width: 300px;
+  height: 200px;
+}
+
+.main .support .sup_image1 {
+  width: 25%;
+}
+
+.main .support .sup_image2 {
+  width: 25%;
 }
 
 footer {
