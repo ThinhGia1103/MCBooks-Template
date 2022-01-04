@@ -1,0 +1,202 @@
+body {
+  padding: 0;
+  margin: 0;
+  color: #444444;
+  background: #fff;
+  font-family: Open Sans, sans-serif;
+}
+header {
+  cursor: pointer;
+  width: 100%;
+  position: fixed;
+  z-index: 100;
+}
+div.vertical-line {
+  width: 1px;
+  background-color: black;
+  height: 50%; /* Override in-line if you want specific height. */
+  float: left; /* Causes the line to float to left of content. 
+    You can instead use position:absolute or display:inline-block
+    if this fits better with your design */
+}
+.topbar {
+  width: 100%;
+  height: 50px;
+  display: flex;
+  background-color: gainsboro;
+  padding: 0 50px 0 50px;
+}
+.topbar .search {
+  width: 50%;
+  padding: 15px 0 15px 0;
+  display: block;
+}
+.topbar .search i {
+  position: absolute;
+  font-weight: 500;
+  height: 100px;
+}
+.topbar .search input {
+  background-color: gainsboro;
+  border: none;
+  padding-left: 30px;
+}
+.topbar .search span {
+  padding: 15px;
+}
+.topbar .contact {
+  width: 50%;
+  margin-top: 10px;
+  display: flex;
+}
+.topbar .contact .left {
+  padding-right: 20px;
+}
+.topbar .contact .right {
+  padding-left: 20px;
+}
+.nav-bar {
+  width: 100%;
+  height: 100px;
+  display: flex;
+  position: fixed;
+  z-index: 100;
+  background-color: white;
+  justify-content: center;
+  text-align: center;
+}
+.nav-bar .logo {
+  width: 500px;
+  height: 100px;
+  text-align: left;
+}
+.nav-bar .logo img {
+  width: 150px;
+  height: 100%;
+  object-fit: cover;
+}
+.nav-bar .menu ul {
+  display: flex;
+  list-style: none;
+  margin-top: 30px;
+}
+.nav-bar .menu ul li {
+  font-size: 17px;
+  padding: 10px;
+}
+.nav-bar .menu ul li button {
+  font-size: 14px !important;
+  line-height: 46px !important;
+  background: #53b778;
+  border-radius: 0;
+  margin-top: -30px;
+  padding: 0 15px !important;
+  text-transform: uppercase;
+  border: 2px solid #53b778;
+  letter-spacing: 0;
+  color: #fff;
+  font-weight: 600;
+  transition: all 0.5s;
+}
+.nav-bar .menu ul li button:hover {
+  background-color: white;
+  color: #53b778;
+}
+.slide1 {
+  width: 100%;
+  height: 500px;
+  margin-bottom: 30px;
+}
+.slide1 .carousel {
+  width: 100%;
+  height: 500px;
+}
+.slide1 .carousel .carousel-inner {
+  width: 100%;
+  height: 500px;
+}
+.slide1.carousel-inner .carousel-item.active,
+.slide1.carousel-inner .carousel-item-next,
+.slide1.carousel-inner .carousel-item-prev {
+  display: flex;
+}
+.slide1 .carousel .carousel-inner .carousel-item {
+  width: 100%;
+  height: 500px;
+}
+.slide1 .carousel .carousel-inner .carousel-item img {
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
+}
+
+.slide2 {
+  width: 100%;
+  height: 200px;
+}
+.slide2 .container {
+  top: 50%;
+  width: 100%;
+  height: 200px;
+  left: 50%;
+}
+.slide2.carousel-inner .carousel-item.active,
+.slide2.carousel-inner .carousel-item-next,
+.slide2.carousel-inner .carousel-item-prev {
+  display: flex;
+}
+.slide2.carousel-inner .carousel-item-right.active,
+.slide2.carousel-inner .carousel-item-next {
+  transform: translateX(33.333%);
+}
+
+.slide2.carousel-inner .carousel-item-left.active,
+.slide2.carousel-inner .carousel-item-prev {
+  transform: translateX(-33.333%);
+}
+.slide2.carousel-inner .carousel-item {
+  transition: transform 1.5s ease;
+}
+.slide2.carousel-inner .carousel-item-right,
+.slide2.carousel-inner .carousel-item-left {
+  transform: translateX(0);
+}
+.color-1 {
+  background-color: rgb(255, 140, 140);
+}
+.color-2 {
+  background-color: rgb(255, 205, 140);
+}
+.color-3 {
+  background-color: rgb(173, 255, 140);
+}
+.color-4 {
+  background-color: rgb(140, 186, 255);
+}
+.color-5 {
+  background-color: rgb(194, 140, 255);
+}
+.bordered {
+  border: rgb(220, 220, 220) medium solid;
+  border-radius: 10px;
+  padding: 5px 5px 5px 5px;
+  height: 10rem;
+}
+.overlay {
+  z-index: 1;
+  padding: 0;
+  border: none;
+  background: rgba(68, 68, 68, 0.5);
+}
+
+.heading {
+  margin-left: 50px;
+  margin-right: 50px;
+  color: rgb(28, 67, 151);
+  font-weight: 700;
+  font-size: 45px;
+}
+.heading hr {
+  width: 100%;
+  color: #444444;
+}

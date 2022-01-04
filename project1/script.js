@@ -2,12 +2,9 @@ const body = document.body;
 const headerTop = document.querySelector(".header .topbar");
 const headerBottom = document.querySelector(".header .menu");
 const menu = document.querySelector(".header .menu ");
-const toggleMenu = document.querySelector(".header .menu ");
 const scrollUp = "scroll-up";
 const scrollDown = "scroll-down";
 let lastScroll = 0;
-
-window.addEventListener("resize", () => {});
 
 window.addEventListener("scroll", () => {
   const currentScroll = window.pageYOffset;
@@ -32,8 +29,4 @@ window.addEventListener("scroll", () => {
     headerBottom.style.transform = `none`;
   }
   lastScroll = currentScroll;
-});
-
-toggleMenu.addEventListener("click", () => {
-  menu.classList.toggle("is-visible");
 });

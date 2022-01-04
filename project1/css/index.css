@@ -1,6 +1,9 @@
-* {
+body {
+  width: 100%;
   padding: 0;
   margin: 0;
+  top: 0;
+  left: 0;
 }
 
 header {
@@ -129,17 +132,13 @@ header {
   background-color: rgb(31, 74, 190);
 }
 
-.slide1 .carousel-inner {
-  width: 100%;
-}
-
 .slide1 .carousel-inner .carousel-item {
   width: 100%;
-  height: 500px;
+  height: 600px;
 }
 
 .slide1 .carousel-inner .carousel-item img {
-  object-fit: cover;
+  object-fit: contain;
   width: 100%;
   height: 100%;
 }
@@ -214,8 +213,13 @@ header {
 }
 
 .main .product .listproduct .listproduct_items {
+  cursor: pointer;
   justify-content: center;
   width: 25%;
+}
+.main .product .listproduct .listproduct_items img:hover{
+  transition: 1s all;
+  background-color: blue;
 }
 
 .main .product .listproduct .listproduct_items img {
@@ -247,6 +251,7 @@ header {
   display: flex;
   margin: 20px 50px 50px 100px;
   text-align: center;
+  justify-content: center;
 }
 
 .main .product .popularproduct .popularproduct_items {
@@ -256,6 +261,7 @@ header {
   border-radius: 10px;
   margin: 20px;
   padding: 10px;
+  cursor: pointer;
 }
 
 .main .product .popularproduct .popularproduct_items img {
@@ -330,7 +336,7 @@ header {
 .main .about {
   margin: 50px;
   width: 100%;
-  height: 500px;
+  height: 400px;
   display: flex;
   justify-content: center;
 }
@@ -341,8 +347,10 @@ header {
   text-align: left;
   line-height: 25px;
 } 
+
 .main .about .about_right {
   width: 50%;
+  text-align: center;
 }
 
 .main .about .about_right img {
@@ -351,7 +359,7 @@ header {
 
 .main .staff {
   background-color: whitesmoke;
-  height: 400px;
+  height: 450px;
 }
 
 .main .staff .image {
@@ -436,6 +444,7 @@ header {
 
 .main .support .map {
   width: 25%;
+  text-align: center;
 }
 
 .main .support .map iframe{
@@ -445,9 +454,11 @@ header {
 
 .main .support .sup_image1 {
   width: 25%;
+  text-align: center;
 }
 
 .main .support .sup_image2 {
+  text-align: center;
   width: 25%;
 }
 
