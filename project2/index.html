@@ -2,350 +2,600 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Techverse - Re-Imagining Technology | Techverse</title>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Techverse - Re-Imagining Technology | Techverse</title>
 
-    <link rel="stylesheet" type="text/css" href="./css/style.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
-        crossorigin="anonymous"></script>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
-        integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+  <link rel="stylesheet" type="text/css" href="./css/style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+    crossorigin="anonymous"></script>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+</head>
 
 <body>
-    <header>
-        <div class="topbar">
-            <!-- //gach đứng dùng border-left: 1 solid black -->
-            <div class="search">
-                <i class="fas fa-search"></i>
-                <input type="text" placeholder="Search">
-            </div>
-            <div class="contact">
-                <div class="left">
-                    <i class="fas fa-phone-alt"></i>
-                    <span>+92 322 4555542</span>
-                </div>
-                <div class="vertical-line"></div>
-                <div class="right">
-                    <i class="far fa-envelope"></i>
-                    <span>info@techverse.pk</span>
-                </div>
-            </div>
+  <header>
+    <div class="topbar">
+      <!-- //gach đứng dùng border-left: 1 solid black -->
+      <div class="search">
+        <i class="fas fa-search"></i>
+        <input type="text" placeholder="Search">
+      </div>
+      <div class="contact">
+        <div class="left">
+          <i class="fas fa-phone"></i>
+          <span>+92 322 4555542</span>
         </div>
-        <div class="nav-bar">
-            <div class="logo">
-                <img src="./images/headlogo.png" alt="">
-            </div>
-            <div class="menu">
-                <ul>
-                    <li>Services</li>
-                    <li>Pricing</li>
-                    <li>Portfolio</li>
-                    <li>About</li>
-                    <li>Blog</li>
-                    <li>Contact</li>
-                    <li><button class="btn-get">Get A Quote ></button></li>
-                </ul>
-            </div>
+        <div class="vertical-line"></div>
+        <div class="right">
+          <i class="far fa-envelope"></i>
+          <span>info@techverse.pk</span>
         </div>
-    </header>
-    <main>
-        <div class="slide1">
-            <div id="carouselExampleFade" class="carousel slide carousel-fade" data-bs-ride="carousel">
-                <div class="carousel-inner">
-                    <div class="carousel-item active">
-                        <img src="./images/slider1-2.jpg" class="d-block w-100" alt="...">
-                    </div>
-                    <div class="carousel-item">
-                        <img src="./images/slider1-1.jpg" class="d-block w-100" alt="...">
-                    </div>
-                    <div class="carousel-item">
-                        <img src="./images/slider1-3.jpg" class="d-block w-100" alt="...">
-                    </div>
-                </div>
-                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleFade"
-                    data-bs-slide="prev">
-                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                    <span class="visually-hidden">Previous</span>
-                </button>
-                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleFade"
-                    data-bs-slide="next">
-                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                    <span class="visually-hidden">Next</span>
-                </button>
-            </div>
+      </div>
+    </div>
+    <div class="nav-bar">
+      <div class="logo">
+        <img src="./images/headlogo.png" alt="">
+      </div>
+      <div class="menu">
+        <ul>
+          <li>Services</li>
+          <li>Pricing</li>
+          <li>Portfolio</li>
+          <li>About</li>
+          <li>Blog</li>
+          <li>Contact</li>
+          <li><button class="btn-discover">Get A Quote ></button></li>
+        </ul>
+      </div>
+    </div>
+    <div class="slide1">
+      <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-indicators">
+          <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active"
+            aria-current="true" aria-label="Slide 1"></button>
+          <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1"
+            aria-label="Slide 2"></button>
+          <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2"
+            aria-label="Slide 3"></button>
         </div>
-        <div style="background-color: gainsboro;" class="slide2">
-            <div class="container ">
-                <div class="row">
-                  <div class="col-4 mx-auto">
-                    <div class="bordered">
-                      <div class="row mx-auto h-100">
-                        <div
-                          id="carousel-1"
-                          class="carousel slide w-100"
-                          data-ride="carousel"
-                        >
-                          <div class="carousel-inner h-100">
-                            <div class="carousel-item active h-100">
-                              <div class="col-4 h-100" id="pad">
-                                <div class="card h-100 color-1"></div>
-                              </div>
-                            </div>
-                            <div class="carousel-item h-100">
-                              <div class="col-4 h-100" id="pad">
-                                <div class="card h-100 color-2"></div>
-                              </div>
-                            </div>
-                            <div class="carousel-item h-100">
-                              <div class="col-4 h-100" id="pad">
-                                <div class="card h-100 color-3"></div>
-                              </div>
-                            </div>
-                            <div class="carousel-item h-100">
-                              <div class="col-4 h-100" id="pad">
-                                <div class="card h-100 color-4"></div>
-                              </div>
-                            </div>
-                            <div class="carousel-item h-100">
-                              <div class="col-4 h-100" id="pad">
-                                <div class="card h-100 color-5"></div>
-                              </div>
-                            </div>
-                          </div>
-                          <a
-                            class="carousel-control-prev"
-                            href="#carousel-1"
-                            role="button"
-                            data-slide="prev"
-                          >
-                            <span
-                              class="carousel-control-prev-icon bg-dark rounded-circle"
-                              aria-hidden="true"
-                            ></span>
-                            <span class="sr-only">Previous</span>
-                          </a>
-                          <a
-                            class="carousel-control-next"
-                            href="#carousel-1"
-                            role="button"
-                            data-slide="next"
-                          >
-                            <span
-                              class="carousel-control-next-icon bg-dark rounded-circle"
-                              id="bordered-2"
-                              aria-hidden="true"
-                            ></span>
-                            <span class="sr-only">Next</span>
-                          </a>
-                        </div>
-                      </div>
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img src="./images/slider1-1.jpg" class="d-block w-100" alt="...">
+            <div class="carousel-caption d-none d-md-block">
+              <h5>Great Website Make Great Value</h5>
+              <p>Some representative placeholder content for the second slide.</p>
+              <hr>
+              <div class="btn">
+                <button class="btn1">contact us ></button>
+                <button class="btn2">our Portfolio</button>
+              </div>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <img src="./images/slider1-2.jpg" class="d-block w-100" alt="...">
+            <div class="carousel-caption d-none d-md-block">
+              <h5>Great Website Make Great Value</h5>
+              <p>Some representative placeholder content for the second slide.</p>
+              <hr>
+              <div class="btn">
+                <button class="btn1">contact us ></button>
+                <button class="btn2">our Portfolio</button>
+              </div>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <img src="./images/slider1-3.jpg" class="d-block w-100" alt="...">
+            <div class="carousel-caption d-none d-md-block">
+              <h5>Great Website Make Great Value</h5>
+              <p>Some representative placeholder content for the second slide.</p>
+              <hr>
+              <div class="btn">
+                <button class="btn1">contact us ></button>
+                <button class="btn2">our Portfolio</button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions"
+          data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions"
+          data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+    </div>
+    <div class="slide2">
+      <div class="container text-center my-3">
+        <div class="row mx-auto my-auto justify-content-center">
+          <div id="recipeCarousel" class="carousel slide lux1" data-bs-ride="carousel">
+            <div class="carousel-inner" role="listbox">
+              <div class="carousel-item active lux2">
+                <div class="col-md-3">
+                  <div class="card">
+                    <div class="card-img">
+                      <img src="./images/slide2-1.png" class="img-fluid">
                     </div>
                   </div>
                 </div>
-              </div> 
+              </div>
+              <div class="carousel-item lux2">
+                <div class="col-md-3">
+                  <div class="card">
+                    <div class="card-img">
+                      <img src="./images/slide2-2.png" class="img-fluid">
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="carousel-item lux2">
+                <div class="col-md-3">
+                  <div class="card">
+                    <div class="card-img">
+                      <img src="./images/slide2-3.png" class="img-fluid">
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="carousel-item lux2">
+                <div class="col-md-3">
+                  <div class="card">
+                    <div class="card-img">
+                      <img src="./images/slide2-4.png" class="img-fluid">
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="carousel-item lux2">
+                <div class="col-md-3">
+                  <div class="card">
+                    <div class="card-img">
+                      <img src="./images/slide2-5.png" class="img-fluid">
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="carousel-item lux2">
+                <div class="col-md-3">
+                  <div class="card">
+                    <div class="card-img">
+                      <img src="./images/slide2-6.png" class="img-fluid">
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="carousel-item lux2">
+                <div class="col-md-3">
+                  <div class="card">
+                    <div class="card-img">
+                      <img src="./images/slide2-7.png" class="img-fluid">
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <a class="carousel-control-prev bg-transparent w-aut" href="#recipeCarousel" role="button"
+              data-bs-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            </a>
+            <a class="carousel-control-next bg-transparent w-aut" href="#recipeCarousel" role="button"
+              data-bs-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            </a>
+          </div>
         </div>
-        <div class="heading">
-          <span>Wholesale Services We Provide</span>
-          <hr>
+      </div>
+    </div>
+  </header>
+  <main>
+    <div class="heading">
+      <span>Wholesale Services We Provide</span>
+      <hr>
+    </div>
+
+    <div class="classify">
+      <div class="cards">
+        <div class="items">
+          <div class="overlay">
+            <i class="fas fa-palette"></i>
+            <p>Logo & Branding</p>
+            <i class="fas fa-laptop"></i>
+            <p>Website Design</p>
+            <i class="fas fa-mobile-alt"></i>
+            <p>Mobie App Design</p>
+            <i class="fas fa-drafting-compass"></i>
+            <p>Graphic/Print Design</p>
+            <i class="fas fa-video"></i>
+            <p>Video Production</p>
+          </div>
+          <div class="details">
+            <div class="logo"><i class="fas fa-palette"></i></div>
+            <div class="title">Design</div>
+            <div class="description">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ullam aut necessitatibus
+              modi consectetur repellat!
+            </div>
+          </div>
         </div>
-        <div class="classify">
-          <div class="classify-item">
-            <img src="" alt="">
-            <span></span>
-            <p></p>
+
+        <div class="items">
+          <div class="overlay">
+            <i class="far fa-newspaper"></i>
+            <p>Content Management System</p>
+            <i class="fas fa-mobile-alt"></i>
+            <p>Mobile App Development</p>
+            <i class="fas fa-shopping-cart"></i>
+            <p>E-Commerce</p>
           </div>
-          <div class="classify-item">
-            <img src="" alt="">
-            <span></span>
-            <p></p>
-          </div>
-          <div class="classify-item">
-            <img src="" alt="">
-            <span></span>
-            <p></p>
-          </div>
-          <div class="classify-item">
-            <img src="" alt="">
-            <span></span>
-            <p></p>
-          </div>
-          <div class="classify-item">
-            <img src="" alt="">
-            <span></span>
-            <p></p>
+          <div class="details">
+            <div class="logo"> <i class="fas fa-laptop-code"></i></div>
+            <div class="title">Development</div>
+            <div class="description">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ullam aut necessitatibus
+              modi consectetur repellat!
+            </div>
           </div>
         </div>
-        <div class="heading">
-          <span>Our Impressive Portfolio</span>
-          <hr>
+
+        <div class="items">
+          <div class="overlay">
+            <i class="fas fa-palette"></i>
+            <p>Search Emgine Optimization</p>
+            <i class="fas fa-palette"></i>
+            <p>Pay-Per-CLick</p>
+            <i class="fas fa-palette"></i>
+            <p>Email Marketing</p>
+            <i class="fas fa-palette"></i>
+            <p>Display Marketing</p>
+            <i class="fas fa-palette"></i>
+            <p>Social Media Marketing</p>
+          </div>
+
+          <div class="details">
+            <div class="logo"><i class="fas fa-mobile-alt"></i></div>
+            <div class="title">Online Marketing</div>
+            <div class="description">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ullam aut necessitatibus
+              modi consectetur repellat!
+            </div>
+          </div>
         </div>
-        <div class="project">
-          <div class="project-img">
-            <img src="" alt="">
+
+        <div class="items">
+          <div class="overlay">
+            <i class="fas fa-palette"></i>
+            <p>Digital Strategy</p>
+            <i class="fas fa-palette"></i>
+            <p>Bussiness Consulting</p>
+            <i class="fas fa-palette"></i>
+            <p>Content Writing</p>
+            <i class="fas fa-palette"></i>
+            <p>Reporting</p>
           </div>
-          <div class="project-img">
-            <img src="" alt="">
+          <div class="details">
+            <div class="logo"><i class="fas fa-puzzle-piece"></i></div>
+            <div class="title">Bussiness</div>
+            <div class="description">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ullam aut necessitatibus
+              modi consectetur repellat!
+            </div>
           </div>
-          <div class="project-img">
-            <img src="" alt="">
-          </div>
-          <div class="project-img">
-            <img src="" alt="">
-          </div>
-          <button class="btn-discover">discover more</button>
         </div>
-        <div class="slide3"></div>
-        <div class="heading">
-          <span>Reasons for Choosing Us</span>
-          <hr>
-        </div>
-        <div class="info">
-          <div class="info_left">
-            <h4>We Lead from the Front</h4>
-            <p>With enthusiasm, devotedness, and hard work, we have accomplished new standards and are at the vanguard of the industry. Infinite hours of work have been invested in our clients, to make their aspirations a reality, to make their brands, companies, and businesses outstanding, and to help them accomplish their objectives. This enabled our clients to create endless business potentialities and achieve exceptional results.</p>
-            <ul>
-              <li>
-                <!-- logo -->
-                <p>Expert guidance to build your start-up.</p>
-              </li>
-              <li>
-                <!-- logo -->
-                <p>Save time, resources, and money!</p>
-              </li>
-              <li>
-                <!-- logo -->
-                <p>Create endless business possibilities!</p>
-              </li>
-            </ul>
-            <p>Experts, with years of experience and unparalleled expertise, are available just for you. We take every project as our own. We take every vision as our own and work for it till the end until we make it a reality. All this and much more has made us the leaders!</p>
+
+        <div class="items">
+          <div class="overlay">
+            <i class="fas fa-palette"></i>
+            <p>Hosting</p>
+            <i class="fas fa-palette"></i>
+            <p>Big Data Analysis</p>
           </div>
-          <div class="info_right">
+          <div class="details">
+            <div class="logo"><i class="fas fa-cloud-upload-alt"></i></div>
+            <div class="title">Technology</div>
+            <div class="description">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ullam aut necessitatibus
+              modi consectetur repellat!
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+
+    <div class="heading">
+      <span>Our Impressive Portfolio</span>
+      <hr>
+    </div>
+
+    <div class="project">
+      <div class="project-container">
+        <div class="project-img">
+          <img src="./images/profit1.png" alt="">
+          <div class="overlay">
+            <button>view project</button>
+          </div>
+        </div>
+        <div class="project-img">
+          <img src="./images/profit2.png" alt="">
+          <div class="overlay">
+            <button>view project</button>
+          </div>
+        </div>
+        <div class="project-img">
+          <img src="./images/profit3.png" alt="">
+          <div class="overlay">
+            <button>view project</button>
+          </div>
+        </div>
+        <div class="project-img">
+          <img src="./images/profit4.png" alt="">
+          <div class="overlay">
+            <button>view project</button>
+          </div>
+        </div>
+      </div>
+      <button class="btn-discover">discover more</button>
+    </div>
+
+    <div class="slide3">
+      <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-indicators">
+          <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+          <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+          <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+        </div>
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img src="./images/slide3-1.jpg" class="d-block w-100" alt="...">
+            <div class="carousel-caption d-none d-md-block">
+              <h5>Inspiring Case Studies</h5>
+              <p>We helped John sell his home décor collections through his personalized website and mobile application. With our professional guidelines, He achieved remarkable results in a very short time.</p>
+              <p>CEO, Adore Décor</p>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <img src="./images/slide3-2.jpg" class="d-block w-100" alt="...">
+            <div class="carousel-caption d-none d-md-block">
+              <h5>Inspiring Case Studies</h5>
+              <p>We helped John sell his home décor collections through his personalized website and mobile application. With our professional guidelines, He achieved remarkable results in a very short time.</p>
+              <p>CEO, Adore Décor</p>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <img src="./images/slide3-3.jpg" class="d-block w-100" alt="...">
+            <div class="carousel-caption d-none d-md-block">
+              <h5>Inspiring Case Studies</h5>
+              <p>We helped John sell his home décor collections through his personalized website and mobile application. With our professional guidelines, He achieved remarkable results in a very short time.</p>
+              <p>CEO, Adore Décor</p>
+            </div>
+          </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+    </div>
+
+    <div class="heading">
+      <span>Reasons for Choosing Us</span>
+      <hr>
+    </div>
+
+    <div class="info">
+      <div class="info_left">
+        <h4>We Lead from the Front</h4>
+        <p>With enthusiasm, devotedness, and hard work, we have accomplished new standards and are at the vanguard of
+          the industry. Infinite hours of work have been invested in our clients, to make their aspirations a reality,
+          to make their brands, companies, and businesses outstanding, and to help them accomplish their objectives.
+          This enabled our clients to create endless business potentialities and achieve exceptional results.</p>
+        <ul>
+          <li>
+            <i class="far fa-user-circle"></i>
+            <p>Expert guidance to build your start-up.</p>
+          </li>
+          <li>
+            <i class="fas fa-dollar-sign"></i>
+            <p>Save time, resources, and money!</p>
+          </li>
+          <li>
+            <i class="far fa-flag"></i>
+            <p>Create endless business possibilities!</p>
+          </li>
+        </ul>
+        <p>Experts, with years of experience and unparalleled expertise, are available just for you. We take every
+          project as our own. We take every vision as our own and work for it till the end until we make it a reality.
+          All this and much more has made us the leaders!</p>
+      </div>
+      <div class="info_right">
+        <ul>
+          <li>
             <h4>Get a Free Quote</h4>
-            <ul>
-              <li>
-                <!-- logo -->
-                <input type="text" placeholder="Name">
-              </li>
-              <li>
-                <!-- logo -->
-                <input type="text" placeholder="Email">
-              </li>
-              <li>
-                <!-- logo -->
-                <input type="text" placeholder="Phone">
-              </li>
-              <li>
-                <!-- logo -->
-                <input type="text" placeholder="Website">
-              </li>
-              <li>
-                <!-- logo -->
-                <input type="text" placeholder="Message">
-              </li>
-              <li> <button class="btn-get">GET A QUOTE ></button></li>
-            </ul>
+          </li>
+          <li>
+            <i class="far fa-user"></i>
+            <input type="text" placeholder="Name">
+          </li>
+          <li>
+            <i class="far fa-envelope"></i>
+            <input type="text" placeholder="Email">
+          </li>
+          <li>
+            <i class="fas fa-phone"></i>
+            <input type="text" placeholder="Phone">
+          </li>
+          <li>
+            <i class="fas fa-laptop"></i>
+            <input type="text" placeholder="Website">
+          </li>
+          <li>
+            <i class="far fa-comment"></i>
+            <input type="text" placeholder="Message">
+          </li>
+        </ul>
+        <button class="btn-discover">GET A QUOTE ></button>
+      </div>
+    </div>
+
+    <div class="success">
+      <img src="./images/bg-img.png" alt="">
+      <div class="title">
+        <h2>Success In Numbers</h2>
+      </div>
+      <div class="detail1">
+        <div class="logo"><i class="fas fa-user-friends"></i></div>
+        <div class="number">290</div>
+        <div class="text">happy clients</div>
+      </div>
+      <div class="detail2">
+        <div class="logo"><i class="far fa-sticky-note"></i></div>
+        <div class="number">321</div>
+        <div class="text">project completed</div>
+      </div>
+      <div class="detail3">
+        <div class="logo"><i class="far fa-calendar-check"></i></div>
+        <div class="number">21400</div>
+        <div class="text">task completed</div>
+      </div>
+    </div>
+
+    <div class="heading">
+      <span>Meet Our Happy Customers</span>
+      <hr>
+    </div>
+
+    <div class="profit">
+      <div class="profit-items">
+        <div class="profit-item">
+          <div>
+            <img src="./images/gg-logo.png" alt="">
+          </div>
+          <div class="star">
+            <span class="fa fa-star checked"></span>
+            <span class="fa fa-star checked"></span>
+            <span class="fa fa-star checked"></span>
+            <span class="fa fa-star checked"></span>
+            <span class="fa fa-star checked"></span>
+          </div>
+          <div class="title">Exellent Service</div>
+          <div class="text">Your brand is how your customers see an your business. It’s shaped by the way you represent
+            yourself –
+            professiona, socially and visually. It’s what makes you unique.</div>
+          <div class="person">Anna Haniball, Facebook</div>
+        </div>
+        <div class="profit-item">
+          <div>
+            <img src="./images/fb-logo.png" alt="">
+          </div>
+          <div class="star">
+            <span class="fa fa-star checked"></span>
+            <span class="fa fa-star checked"></span>
+            <span class="fa fa-star checked"></span>
+            <span class="fa fa-star checked"></span>
+            <span class="fa fa-star checked"></span>
+          </div>
+          <div class="title">This is a Quick, Effective Team</div>
+          <div class="text">Agency transformed our website into a vital part of our sales, then tailored a seo campaign,
+            which has
+            doubled our traffic from a year ago.</div>
+          <div class="person">Adam Sandler, Sistech IT</div>
+        </div>
+        <div class="profit-item">
+          <div>
+            <img src="./images/yep-logo.png" alt="">
+          </div>
+          <div class="star">
+            <span class="fa fa-star checked"></span>
+            <span class="fa fa-star checked"></span>
+            <span class="fa fa-star checked"></span>
+            <span class="fa fa-star checked"></span>
+            <span class="fa fa-star checked"></span>
+          </div>
+          <div class="title">Thanks to Digital Marketo</div>
+          <div class="text">Amazing theme and top class support, as I’m a beginner, They helped me above agenuine care
+            for you to
+            enjoy and move The theme and author!</div>
+          <div class="person">Hung Su, Samsung</div>
+        </div>
+      </div>
+      <button class="btn-discover">discover more</button>
+    </div>
+
+    <div class="heading">
+      <span>Latest News</span>
+      <hr>
+    </div>
+
+    <div class="news">
+      <div class="news-items">
+        <div class="news-item">
+          <div class="details">
+            <div class="date">December 31, 2021 - blog</div>
+            <div class="title">Fast Careers To Study Reddit</div>
+            <div class="text">Because we respect your ideal to privateness, you can pick out not to make it possible for
+              some kinds of
+              cookies. These cookies are needed for the web-site to purpose and won’t be able to be switched off in our
+              units. They are usually only established in response to steps you have taken which outcome</div>
           </div>
         </div>
-        <div class="success">
-          <span>Success In Numbers</span>
-          <div class="success-item">
-            <img src="" alt="">
-            <div class="description">
-              <span>290</span>
-              <p>happy client</p>
-            </div>  
-          </div>
-          <div class="success-item">
-            <img src="" alt="">
-            <div class="description">
-              <span>321</span>
-              <p>project completed</p>
-            </div>  
-          </div>
-          <div class="success-item">
-            <img src="" alt="">
-            <div class="description">
-              <span>21400</span>
-              <p>task completed</p>
-            </div>  
+        <div class="news-item">
+          <div class="details">
+            <div class="date">December 30, 2021 - blog</div>
+            <div class="title">Reddit Jobs For Adults With Intellectual Disabilities</div>
+            <div class="text">Need to have enable in your publication journey? Avail 20% Off on Your Initially Get. Use
+              Coupon Code:
+              DISCOUNT20 SCImago Journal Rank (SJR indicator) is a measure of scientific impact of scholarly journals
+              that
+              accounts for both equally the range of citations acquired by a journal and the worth or status of the
+              journals
+            </div>
           </div>
         </div>
-        <div class="heading">
-          <span>Meet Our Happy Customers</span>
-          <hr>
-        </div>
-        <div class="profit">
-          <div class="profit-item">
-            <img src="" alt="">
-            <!-- star -->
-            <h3>Exellent Service</h3>
-            <h4>Your brand is how your customers see an your business. It’s shaped by the way you represent yourself – professiona, socially and visually. It’s what makes you unique.</h4>
-            <p>Anna Haniball, Facebook</p>
-          </div>
-          <div class="profit-item">
-            <img src="" alt="">
-            <!-- star -->
-            <h3>This is a Quick, Effective Team</h3>
-            <h4>Agency transformed our website into a vital part of our sales, then tailored a seo campaign, which has doubled our traffic from a year ago.</h4>
-            <p>Adam Sandler, Sistech IT</p>
-          </div>
-          <div class="profit-item">
-            <img src="" alt="">
-            <!-- star -->
-            <h3>Thanks to Digital Marketo</h3>
-            <h4>Amazing theme and top class support, as I’m a beginner, They helped me above agenuine care for you to enjoy and move The theme and author!</h4>
-            <p>Hung Su, Samsung</p>
-          </div>
-          <button class="">discover more</button>
-        </div>
-        <div class="heading">
-          <span>Latest News</span>
-          <hr>
-        </div>
-        <div class="news">
-          <div class="news-item">
-            <input type="text" placeholder="December 31, 2021 - blog">
-            <h3>Fast Careers To Study Reddit</h3>
-            <p>Because we respect your ideal to privateness, you can pick out not to make it possible for some kinds of cookies. These cookies are needed for the web-site to purpose and won’t be able to be switched off in our units. They are usually only established in response to steps you have taken which outcome</p>
-          </div>
-          <div class="news-item">
-            <input type="text" placeholder="December 30, 2021 - blog">
-            <h3>Reddit Jobs For Adults With Intellectual Disabilities</h3>
-            <p>rn Need to have enable in your publication journey? Avail 20% Off on Your Initially Get. Use Coupon Code: DISCOUNT20 SCImago Journal Rank (SJR indicator) is a measure of scientific impact of scholarly journals that accounts for both equally the range of citations acquired by a journal and the worth or status of the journals</p>
-          </div>
-          <div class="news-item">
-            <input type="text" placeholder="December 29, 2021 - blog">
-            <h3>Elegance of Head of Artsmeaning and Ultimate Mission Brought to Ones Life Reddit</h3>
-            <p>You want your title to be fascinating, even funny, but not at the expense of not being read. 11. Standalone document: Often prepare your brochures so that they have more than enough information and facts to perform as a stand by yourself document. Even if you routinely mail your brochures with very best essay producing</p>
-          </div>
-          <button class="btn-discover">more blog</button>
-        </div>
-        <div class="support">
-          <a class="btn-top" href="#header">
-            <span>icon</span>
-          </a>
-          <h3>Sign up for our newsletter to stay up to date with tech news!</h3>
-          <div class="sup-input">
-            <!-- logo -->
-            <input type="text" placeholder="Your name">
-          </div>
-          <div class="sup-input">
-            <!-- logo -->
-            <input type="text" placeholder="Your email address">
-          </div>
-          <div class="sup-input">
-            <button class="btn-discover">sign up</button>
+        <div class="news-item">
+          <div class="details">
+            <div class="date">December 29, 2021 - blog</div>
+            <div class="title">Elegance of Head of Artsmeaning and Ultimate Mission Brought to Ones Life Reddit</div>
+            <div class="text">You want your title to be fascinating, even funny, but not at the expense of not being
+              read. 11. Standalone
+              document: Often prepare your brochures so that they have more than enough information and facts to perform
+              as a stand by yourself document. Even if you routinely mail your brochures with very best essay producing
+            </div>
           </div>
         </div>
-    </main>
-    <footer>
+      </div>
+      <button class="btn-discover">more blog</button>
+    </div>
+  </main>
+  <footer>
+    <div class="support">
+      <a href="#top"><button><i class="fas fa-chevron-up"></i></button></a>
+      <h3>Sign up for our newsletter to stay up to date with tech news!</h3>
+      <div class="item-sup">
+        <div class="item">
+          <i class="far fa-user"></i>
+          <input type="text" placeholder="Your name">
+        </div>
+        <div class="item">
+          <i class="far fa-envelope"></i>
+          <input type="text" placeholder="Your email address">
+        </div>
+        <div class="item">
+          <button>sign up</button>
+        </div>
+      </div>
+    </div>
+    <div class="footer-items">
       <div class="footer-item">
         <ul>
-          <li><h4>Popular Services</h4></li>
+          <li>
+            <h4>Popular Services</h4>
+          </li>
           <li>Website Design</li>
           <li>Mobile App Development</li>
           <li>Search Engine Optimization</li>
@@ -355,14 +605,18 @@
       </div>
       <div class="footer-item">
         <ul>
-          <li><h4>Resourses</h4></li>
+          <li>
+            <h4>Resourses</h4>
+          </li>
           <li>Case Studies</li>
           <li>Portfolio</li>
         </ul>
       </div>
       <div class="footer-item">
         <ul>
-          <li><h4>Support</h4></li>
+          <li>
+            <h4>Support</h4>
+          </li>
           <li>Contact</li>
           <li>Privacy Policy</li>
           <li>Terms & Conditions</li>
@@ -374,19 +628,22 @@
       </div>
       <div class="footer-item">
         <ul>
-          <li><h4>Get in touch</h4></li>
-          <li></li>
-          <li></li>
-          <li></li>
-          <li></li>
-          <li></li>
-          <li></li>
-          <li></li>
+          <li>
+            <h4>Get in touch</h4>
+          </li>
+          <li><i class="fab fa-facebook"></i></i></li>
+          <li><i class="fab fa-twitter"></i></li>
+          <li><i class="fab fa-google-plus-g"></i></li>
+          <li><i class="fab fa-instagram"></i></li>
+          <li><i class="fab fa-pinterest"></i></li>
+          <li><i class="fab fa-linkedin-in"></i></li>
+          <li><i class="fab fa-youtube"></i></li>
         </ul>
       </div>
-    </footer>
+    </div>
+  </footer>
 
-    <script type="text/javascript" src="script.js"></script>
+  <script type="text/javascript" src="script.js"></script>
 </body>
 
 </html>
